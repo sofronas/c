@@ -4,7 +4,8 @@
     color: rgba(255,255,255,1.00);
     margin-bottom: 20px;
     border-bottom-right-radius: 6px;
-    border-top-left-radius: 0px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
 }
 .footer-bs .footer-brand, 
@@ -82,7 +83,9 @@
     color: white;
     font-size: 30px;
 }
-.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social li { 
+    padding:5px 4px;
+}
 .footer-bs .footer-social a { 
     color:rgba(255,255,255,1.00);
 }

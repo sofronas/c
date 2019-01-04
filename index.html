@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="css/footer_style.css">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
 
     <!-- JavaScripts -->
     <script src="https://use.fontawesome.com/07b0ce5d10.js"></script>
@@ -73,12 +73,65 @@
 
     <div class="collapse navbar-collapse js-navbar-collapse">
         <ul class="nav navbar-nav">
-            <li>
-                <a href="index.html">Αρχική</a>
+            <li class="active">
+                <a href="index.html">
+                    <span><i class="fa fa-home" aria-hidden="true"></i></span> Αρχική
+                </a>
             </li>
             <li class="dropdown mega-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <span class="caret"></span></a>              
-                             
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog" aria-hidden="true"></i>   Εργαλεία <span class="caret"></span></a>              
+                <ul class="dropdown-menu mega-dropdown-menu">
+                    <li class="col-md-3">
+                        <ul>
+                            <li class="dropdown-header">Εγκατάσταση Εργαλειών</li>
+                            <hr>
+                            <li>
+                                <a href="#"><span><img src="icons/vm.jpg" style="width: 20px;height: 16px;"></span> VmWare </a>
+                            </li>
+                            <li>
+                                <a href="#"><span><img src="icons/vt.png" style="width: 20px;height: 16px;"></span> Virtual Box</a>
+                            </li>
+                            <li>
+                                <a href="#"><span><img src="icons/mingw.jpeg" style="width: 16px;height: 16px;"></span> Windows C Compiler (MinGW)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col-md-3">
+                        <ul>
+                            <li class="dropdown-header">Πιο σύνθετα εργαλεία</li>
+                            <hr>
+                            <li><a href="#"><span><img src="icons/dual.png" style="width: 16px;height: 16px;"></span>  Dual Boot</a>
+                            </li>
+                            <li><a href="#"><span><img src="icons/code.png" style="width: 16px;height: 16px;"></span>  Online Compiler</a>
+                            </li>
+                            <li><a href="#"><span><img src="icons/online.png" style="width: 16px;height: 16px;"></span>  Απομακρυνσμένη Σύνδεση</a>
+                            </li>
+                            <li><a href="#"><span><img src="icons/usb.png" style="width: 20px;height: 16px;"></span>  Usb Live + Usb Storage</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-md-3">
+                        <ul>
+                            <li class="dropdown-header">Editors</li>
+                            <hr>
+                            <li><a href="#"><span><img src="icons/sublime.jpeg" style="width: 16px;height: 16px;"></span>  Sublime Text</a>
+                            </li>
+                            <li><a href="#"><span><img src="icons/atom.png" style="width: 16px;height: 16px;"></span>  Atom</a>
+                            </li>
+                            <li><a href="#"><span><img src="icons/ultra.png" style="width: 16px;height: 16px;"></span>  UltraEdit</a></li>                 
+                            <li><a href="#"><span><img src="icons/gedit.png" style="width: 16px;height: 16px;"></span>  gEdit</a></li>         
+                        </ul>
+                    </li>
+                    <li class="col-md-3">
+                        <ul>
+                            <li class="dropdown-header">Much more</li>
+                            <hr style="margin-top: 1px !imporant;">
+                            <li><a href="#">Easy to Customize</a></li>
+                            <li><a href="#">Calls to action</a></li>
+                            <li><a href="#">Custom Fonts</a></li>
+                            <li><a href="#">Slide down on Hover</a></li>                
+                        </ul>
+                    </li>
+                </ul>      
             </li>
             <li class="dropdown mega-dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <span class="caret"></span></a>                
@@ -105,118 +158,60 @@
     
 </div>
 
-<div class="container">
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-</div>
    
-<!-- <div class="container">
-    <footer>
-        <hr>
-        <p>test footer</p>
-    </footer>
-</div> -->
-
-<!-- <footer class="footer"> -->
-    <!-- <div class="container">
-        <hr>
-        <div class="row">
-        <div class="col-sm-3">
-            <h4 class="title">Sumi</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p>
-            <ul class="social-icon">
-            <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-            <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
-            <a href="#" class="social"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-            </ul>
-            </div>
-        <div class="col-sm-3">
-            <h4 class="title">My Account</h4>
-            <span class="acount-icon">          
-            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Wish List</a>
-            <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> Cart</a>
-            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
-            <a href="#"><i class="fa fa-globe" aria-hidden="true"></i> Language</a>           
-          </span>
-            </div>
-        <div class="col-sm-3">
-            <h4 class="title">Category</h4>
-            <div class="category">
-            <a href="#">men</a>
-            <a href="#">women</a>
-            <a href="#">boy</a>
-            <a href="#">girl</a>
-            <a href="#">bag</a>
-            <a href="#">teshart</a>
-            <a href="#">top</a>
-            <a href="#">shos</a>
-            <a href="#">glass</a>
-            <a href="#">kit</a>
-            <a href="#">baby dress</a>
-            <a href="#">kurti</a>           
-            </div>
-            </div>
-        <div class="col-sm-3">
-            <h4 class="title">Payment Methods</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <ul class="payment">
-            <li><a href="#"><i class="fa fa-cc-amex" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i></a></li>            
-            <li><a href="#"><i class="fa fa-paypal" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
-            </ul>
-            </div>
-        </div>
-        <hr>
-        
-        <div class="row text-center"> © 2017. Made with  by sumi9xm.</div>
-    </div> -->
-        
-        
-    <!-- </footer> -->
 <div class="container">
 <footer class="footer-bs">
         <div class="row">
             <div class="col-md-4 footer-brand animated fadeInLeft">
                 <h2>Quote</h2>
+                <hr>
                 <p>
-                    Program for some time and then have some fun.
-                    Keep living and not keep programming.
+                    <blockquote>Program for some time and then have some fun.
+                    Keep living and not keep programming.</blockquote>
                 </p>
             </div>
             <div class="col-md-4 footer-nav animated fadeInUp">
                 <h4>Διάφοροι Σύνδεσμοι</h4>
+                <hr>
                 <div class="col-md-6">
                     <ul class="pages">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contacts</a></li>
                         <li><a href="#">Terms & Condition</a></li>
                         <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Site Map</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-4 footer-social animated fadeInDown">
-                <h4>Follow Us</h4>
+                <h4>Κοινωνικά Δίκτυα</h4>
+                <hr>
                 <ul>
-                    <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-            <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
-            <a href="#" class="social"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">RSS</a></li>
+                    <li>
+                        <a href="#" class="social">
+                            <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social">
+                            <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social">
+                            <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i> YouTube
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social">
+                            <i class="fa fa-google" aria-hidden="true"></i> Google
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
