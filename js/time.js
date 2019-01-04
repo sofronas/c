@@ -29,7 +29,7 @@ function time_clock(x){
 	imerominia = '' + meres[mera] + ' ' + mera + ' ' + mines[minas] + ' ' + etos + ' ' + hour + ':' + minute + ':' + second;
 
 	document.getElementById(x).innerHTML = imerominia;
-	setTimeout('time_clock("'+x+'");','1000');
+	setTimeout('time_clock("'+ x +'");','1000');
 
 	return true;
 
