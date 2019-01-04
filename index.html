@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="img/letterC.ico">
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min_beauty.css">
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
@@ -27,6 +27,14 @@
 
     <!-- JavaScripts -->
     <script src="https://use.fontawesome.com/07b0ce5d10.js"></script>
+    <script scr="js/time.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,6 +45,18 @@
 </head>
 
 <body>
+
+<div class="container">
+    <div class="stopnav">
+        <span class="spanclock">
+            <span id="ora">
+                <script type="text/javascript">
+                    window.onload = time_clock('ora');
+                </script>
+            </span>
+        </span>
+    </div>
+</div>
 
 <div class="container">
     <!-- Logos -->
@@ -155,16 +175,16 @@
                                 <a href="#"><span><img src="icons/" style="width: 20px;height: 16px;"></span> Αναδρομή </a>
                             </li>
                             <li>
-                                <a href="#"><span><img src="icons/vt.png" style="width: 20px;height: 16px;"></span> Πρότυπο ANSI</a>
+                                <a href="#"><span><img src="icons/" style="width: 20px;height: 16px;"></span> Πρότυπο ANSI</a>
                             </li>
                             <li>
-                                <a href="#"><span><img src="icons/mingw.jpeg" style="width: 16px;height: 16px;"></span> Πλεονεκτήματα και Μειονεκτήματα</a>
+                                <a href="#"><span><img src="icons/" style="width: 16px;height: 16px;"></span> Πλεονεκτήματα και Μειονεκτήματα</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="col-md-3">
+                    <li class="col-md-3"> 
                         <ul>
-                            <li class="dropdown-header">Πιο σύνθετα εργαλεία</li>
+                            <li class="dropdown-header">test</li>
                             <hr>
                             <li><a href="#"><span><img src="icons/dual.png" style="width: 16px;height: 16px;"></span>  Dual Boot</a>
                             </li>
@@ -216,13 +236,17 @@
         <li><a href="#">My cart (0) items</a></li>
       </ul>
     </div>
-
+    <!-- Blue hr -->
+    <div class="safternav"></div>
     </nav>
     
 </div>
 
-   
+
 <div class="container">
+    <div class="sdownav">
+        
+    </div>
 <footer class="footer-bs">
         <div class="row">
             <div class="col-md-4 footer-brand animated fadeInLeft">
@@ -301,11 +325,7 @@
 
 
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    
 
     <!-- Script to Activate the Carousel -->
     <script>
