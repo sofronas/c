@@ -1,4 +1,3 @@
-// Constants that won't change through the script
 // #hour - target id for hour hand in the svg
 const HOURHAND = document.querySelector("#hour");
 const MINUTEHAND = document.querySelector("#minute");
@@ -16,7 +15,6 @@ function run_the_clock(){
   let minPosition = (min * 360/60) + (sec* 360/60)/60;
   let secPosition = sec * 360/60;
 
-  //Then we need to apply these numbers as degrees in the inline styles for transform on each of the objects.
   HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
   MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
   SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";

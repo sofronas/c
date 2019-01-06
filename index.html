@@ -50,10 +50,11 @@
 
 <body>
 
+<!-- top navigation bar -->
 <div class="container">
     <div class="topnav">
         
-        <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 600 600">
+        <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="20" height="28" viewBox="0 0 600 600">
             <g id="face">
                 <circle class="circle" cx="300" cy="300" r="253.9"/>
                 <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
@@ -82,7 +83,7 @@
         </span>
         <ul>
             <li>
-                <a href="index.html"><span><img src="icons/home.svg" width="16px" height="16px"></span> Αρχική</a>
+                <a href="index.html"><span><i class="fa fa-fw fa-home" width="32" height="32"></i></span> Αρχική</a>
             </li>
             <li>
                 <a href="#"><span><img src="icons/aboutus.png" width="16px" height="16px"></span> Σχετικά</a>
@@ -103,37 +104,7 @@
     </div> 
 </div>
 
-<!-- <div class="container">
-    <div class="stopnav">
-        <span class="spanclock">
-            <span id="t">
-                <script type="text/javascript">
-                    window.onload = time_clock('t');
-                </script>
-            </span>
-        </span>
-        <ul class="topmenunav">
-            <li>
-                <a href="index.html"><span><img src="icons/home.svg" width="16px" height="16px"></span> Αρχική</a>
-            </li>
-            <li>
-                <a href="#"><span><img src="icons/aboutus.png" width="16px" height="16px"></span> Σχετικά</a>
-            </li>
-            <li>
-                <a href="#"><span><img src="icons/epikinonia.png" width="16px" height="16px"></span> Επικοινωνία</a>
-            </li>
-            <li>
-                <a href="#"><span><img src="icons/pp.png" width="16px" height="16px"></span> Privacy Policy</a>
-            </li>
-            <li>
-                <a href="#"><span><img src="icons/sitemap.png" width="16px" height="16px"></span> Sitemap</a>
-            </li>
-            <li>
-                <a href="#"><span><img src="icons/forum.png" width="16px" height="16px"></span> Συχνές Ερωτήσεις FAQ</a>
-            </li>
-        </ul>
-    </div>
-</div> -->
+<!-- header -->
 <div class="container" >
     <header style="background-color: white;margin: 0 auto; width: 100%">
         <!-- Logos -->
@@ -157,8 +128,9 @@
         </table>
     </header>
 </div>
+
+<!-- main navigation bar -->
 <div class="container">
-    
     
     <!--Nav Bar-->
     <nav class="navbar navbar-inverse">
@@ -174,7 +146,7 @@
 
     <div class="collapse navbar-collapse js-navbar-collapse">
         <ul class="nav navbar-nav">
-            <li class="active">
+            <li class="active submenu-list" >
                 <a href="index.html" >
                     <span>
                         <!-- <i class="fa fa-home" aria-hidden="true"></i> -->
@@ -183,7 +155,7 @@
                 </a>
             </li>
             <!-- Ergaleia -->
-            <li class="dropdown mega-dropdown">
+            <li class="dropdown mega-dropdown submenu-list-item">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog" aria-hidden="true"></i>   Εργαλεία <span class="caret"></span></a>              
                 <ul class="dropdown-menu mega-dropdown-menu">
                     <li class="col-md-3">
@@ -248,7 +220,7 @@
                 </ul>      
             </li>
             <!-- Eisagogi -->
-            <li class="dropdown mega-dropdown">
+            <li class="dropdown mega-dropdown submenu-list-item">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-info-circle" aria-hidden="true"></i></span>  Εισαγωγή <span class="caret"></span></a>                
                 <ul class="dropdown-menu mega-dropdown-menu">
                     <li class="col-md-3">
@@ -304,21 +276,23 @@
                 </ul>
             </li>
             <!-- Rest Items of Menu -->
-            <li><a href="#">Store locator</a></li>
+            <li class="dropdown mega-dropdown submenu-list-item"><a href="#">Store locator</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My account <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-        <li><a href="#">My cart (0) items</a></li>
-      </ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My account <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li>
+                <a href="#">My cart (0) items</a>
+            </li>
+        </ul>
     </div>
     <!-- Blue hr -->
     <div class="safternav"></div>
@@ -340,7 +314,7 @@
                    <q> While there's code there's bug. </q>
                 </blockquote>
                 <blockquote>
-                   <q> Bad programmers worry about the code. Good programmeres worry about data structures and their relationships. </q>
+                   <q> Bad programmers worry about the code. Good programmers worry about data structures and their relationships. </q>
                 </blockquote>
             </div>
             <div class="col-md-4 footer-nav animated fadeInUp">
@@ -418,21 +392,10 @@
     })
     </script>
 
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $(".dropdown").hover(            
-            function() {
-                $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
-                $(this).toggleClass('open');        
-            },
-            function() {
-                $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
-                $(this).toggleClass('open');       
-            }
-        );
-    });
-    </script>
+    <!-- change hover item to active -->
+    <script src="js/activeChanger.js"></script>
 
+    <!-- Clock Script -->
     <script src="js/clock.js"></script>
 </body>
 

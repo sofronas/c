@@ -121,6 +121,15 @@ body {
   overflow: hidden;
 }
 
+.submenu-list,
+.submenu-list-item {
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+}
+
+
 .navbar .brand, .navbar .nav > li > a {
   color: #DCE2DD;
 }
@@ -130,6 +139,14 @@ body {
   background-color: #007ABE;
   color: white;
 }
+
+/*keno gia arxiki kai ergaleia*/
+.navbar-nav li > a:first-child:hover {
+  background-color: #007ABE;
+  color: white;
+  border-left: 3px solid #0E0E0E;
+}
+
 
 .headerLogo {
   display: inline-block;
