@@ -115,10 +115,11 @@
 
 .footer_style {
     text-align:center;
+    color: white;
     border-radius: 4px;
 }
 
 .footer_style a:hover {
     text-decoration: none;  
-    color: purple;  
+    color: black;  
 }

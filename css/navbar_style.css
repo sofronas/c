@@ -1,27 +1,56 @@
 body {
   margin: 0px;
   padding-top: 0px;
-  /*background: url(https://lh5.googleusercontent.com/proxy/iMoJsrreBJFaZpEt8h0ll8I7MwSfhnT7HSjaDOUlhgTuXfX3JCIZEJmDfYpRVSiX-Uc=s0-d);*/
+  background: url(https://lh5.googleusercontent.com/proxy/iMoJsrreBJFaZpEt8h0ll8I7MwSfhnT7HSjaDOUlhgTuXfX3JCIZEJmDfYpRVSiX-Uc=s0-d);
 }
-
-/*.navbar .brand, .navbar .nav > li > a {
-  background-color: blue#D64848;
-}*/
 
 .stopnav {
   background-color: #3d85c6;
-  padding: 0;
-  height: 29px;
+  /*padding: 0;*/
+  height: 30px;
   font-size: 14px;
   position: relative;
+}
+
+.topmenunav {
+  list-style: none;
+}
+
+.topmenunav ul {
+  padding: 0; 
+}
+
+.topmenunav li {
+  margin-top: 3px;
+  margin-right: 5px;
+  margin-left: 8px;
+  display: inline-block;
+  width: auto;
+  list-style: outside none none;
+}
+
+.topmenunav a{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.topmenunav a:hover {
+  background-color: black;
+  color: white;
+  height: 30px;
+  /*border-top: 1px solid blue;*/
+  /*line-height: 15px;*/
 }
 
 .spanclock {
   float: left;
   color: #e2e2e2;
   display: block;
+  text-align: left;
   line-height: 2px;
-  margin-top: 4px;
+  margin-top: 13px;
+  margin-left: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 15px;
 }
@@ -39,7 +68,43 @@ body {
 
 /*****************************************/
 
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #3D85C6;
+  overflow: hidden;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
 
+/*.topnav svg, .topnav g {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}*/
+
+/* Style the links inside the navigation bar */
+.topnav ul {
+  display: block;
+  list-style: none;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
 
 /*****************************************/
 .safternav {
@@ -55,6 +120,11 @@ body {
   position: relative;
   overflow: hidden;
 }
+
+.navbar .brand, .navbar .nav > li > a {
+  color: #DCE2DD;
+}
+
 .navbar .brand, .navbar .nav > li > a:hover {
   /*color: #F56E6E;*/
   background-color: #007ABE;
