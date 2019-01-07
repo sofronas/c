@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding-top: 0px;
-  background: url(https://lh5.googleusercontent.com/proxy/iMoJsrreBJFaZpEt8h0ll8I7MwSfhnT7HSjaDOUlhgTuXfX3JCIZEJmDfYpRVSiX-Uc=s0-d);
+  background: url(../img/background.jpg);
 }
 
 .stopnav {
@@ -145,6 +145,7 @@ body {
   background-color: #007ABE;
   color: white;
   border-left: 3px solid #0E0E0E;
+  border-right: 3px solid #0E0E0E;
 }
 
 
