@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="css/footer_style.css">
     <link rel="stylesheet" type="text/css" href="css/sf.css">
     <link rel="stylesheet" type="text/css" href="css/body_area.css">
+    <link rel="stylesheet" type="text/css" href="css/img_sofron.css">
 
     <link rel="stylesheet" type="text/css" href="css/clock.css">
     <!-- Custom Fonts -->
@@ -30,16 +31,20 @@
 
     <!-- JavaScripts -->
     <script src="https://use.fontawesome.com/07b0ce5d10.js"></script>
-
     <!-- Time Clock -->
     <script src="js/time.js"></script>
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+
+	<!-- Go Top Arrow -->
+    <script src="js/gotoparrow.js"></script>
+    
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -84,25 +89,32 @@
         </span>
         <ul>
             <li>
-                <a href="index.html"><span><i class="fa fa-fw fa-home" width="32" height="32"></i></span> Αρχική</a>
+            	<!-- index.html -->
+                <a href="" id="index_click"><span><i class="fa fa-fw fa-home" width="32" height="32"></i></span> Αρχική</a>
             </li>
             <li>
-                <a href="aboutus.html"><span><img src="icons/aboutus.png" width="16px" height="16px"></span> Σχετικά</a>
+            	<!-- aboutus.html -->
+                <a href="" id="about_click"><span><img src="icons/aboutus.png" width="16px" height="16px"></span> Σχετικά</a>
             </li>
             <li>
-                <a href="contact.html"><span><img src="icons/epikinonia.png" width="16px" height="16px"></span> Επικοινωνία</a>
+            	<!-- contact.html -->
+                <a href="" id="contact_click"><span><img src="icons/epikinonia.png" width="16px" height="16px"></span> Επικοινωνία</a>
             </li>
             <li>
-                <a href="terms.html"><span><img src="icons/pp.png" width="16px" height="16px"></span> Privacy Policy</a>
+            	<!-- terms.html-->
+                <a href="" id="terms_click"><span><img src="icons/pp.png" width="16px" height="16px"></span> Privacy Policy</a>
             </li>
             <li>
-                <a href="sitemap.html"><span><img src="icons/sitemap.png" width="16px" height="16px"></span> Sitemap</a>
+            	<!-- sitemap.html -->
+                <a href="" id="sitemap_click"><span><img src="icons/sitemap.png" width="16px" height="16px"></span> Sitemap</a>
             </li>
             <li>
-                <a href="faq.html"><span><img src="icons/faq.png" width="16px" height="16px"></span> Συχνές Ερωτήσεις FAQ</a>
+            	<!-- faq.html -->
+                <a href="" id="faq_click"><span><img src="icons/faq.png" width="16px" height="16px"></span> Συχνές Ερωτήσεις FAQ</a>
             </li>
             <li>
-                <a href="thanks.html"><span><img src="icons/thanks.png" width="16px" height="16px"></span> Ευχαριστίες</a>
+            	<!-- thanks.html -->
+                <a href="" id="thanks_click"><span><img src="icons/thanks.png" width="16px" height="16px"></span> Ευχαριστίες</a>
             </li>
         </ul>
     </div> 
@@ -167,7 +179,7 @@
                             <li class="dropdown-header">Εγκατάσταση Εργαλειών</li>
                             <hr>
                             <li>
-                                <a href="#"><span><img src="icons/vmware.png" style="width: 16px;height: 16px;"></span> VmWare </a>
+                                <a href="" id="vmware_click"><span><img src="icons/vmware.png" style="width: 16px;height: 16px;"></span> VmWare </a>
                             </li>
                             <li>
                                 <a href="#"><span><img src="icons/vt.png" style="width: 16px;height: 16px;"></span> Virtual Box</a>
@@ -585,7 +597,7 @@
 </div>
 
 <!-- Body -->
-<div class="container">
+<div class="container" id="body_id">
     <div class="body_area">
         <!-- Top Container -->
         <section class="top-container">
@@ -707,14 +719,61 @@
 
 
 
-    
+    <!-- Page Navigation System -->
+	<script type="text/javascript">
+        $(document).ready(function(){
+            // Top Navigation Menu:
+            $("#index_click").click(function(e){
+            	e.preventDefault();
+            	// $("#body_id").load('index.html');
+            });
+
+            $("#about_click").click(function(e){
+            	e.preventDefault();
+            	$("#body_id").load('aboutus.html');
+            });
+            
+            $("#contact_click").click(function(e){
+            	e.preventDefault();
+            	$("#body_id").load('contact.html');
+            });
+
+            $("#terms_click").click(function(e){
+            	e.preventDefault();
+            	$("#body_id").load('terms.html');
+            });
+
+            $("#sitemap_click").click(function(e){
+            	e.preventDefault();
+            	$("#body_id").load('sitemap.html');
+            });
+
+			$("#faq_click").click(function(e){
+            	e.preventDefault();
+            	$("#body_id").load('faq.html');
+            });            
+
+			$("#thanks_click").click(function(e){
+            	e.preventDefault();
+            	$("#body_id").load('thanks.html');
+            }); 
+
+
+            //	Navigation Menu Posts:
+            $("#vmware_click").click(function(e){
+            	e.preventDefault();
+            	$("#body_id").load('posts/vmware.html');
+            }); 
+        });
+
+    </script>
 
     <!-- Script to Activate the Carousel -->
-    <script>
+    <!-- <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
-    </script>
+    </script> -->
 
     <!-- change hover item to active -->
     <script src="js/activeChanger.js"></script>
