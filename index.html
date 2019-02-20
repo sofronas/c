@@ -182,10 +182,10 @@
                                 <a href="" id="vmware_click"><span><img src="icons/vmware.png" style="width: 16px;height: 16px;"></span> VmWare </a>
                             </li>
                             <li>
-                                <a href="#"><span><img src="icons/vt.png" style="width: 16px;height: 16px;"></span> Virtual Box</a>
+                                <a href="" id="virtualbox_click"><span><img src="icons/vt.png" style="width: 16px;height: 16px;"></span> Virtual Box</a>
                             </li>
                             <li>
-                                <a href="#"><span><img src="icons/mingw.png" style="width: 16px;height: 16px;"></span> Windows C Compiler</a>
+                                <a href="" id="mingw_click"><span><img src="icons/mingw.png" style="width: 16px;height: 16px;"></span> Windows C Compiler</a>
                             </li>
                         </ul>
                     </li>
@@ -193,26 +193,26 @@
                         <ul>
                             <li class="dropdown-header">Πιο σύνθετα εργαλεία</li>
                             <hr>
-                            <li><a href="#"><span><img src="icons/dual.png" style="width: 16px;height: 16px;"></span>  Dual Boot</a>
+                            <li><a href="" id="dualboot_click"><span><img src="icons/dual.png" style="width: 16px;height: 16px;"></span>  Dual Boot</a>
                             </li>
-                            <li><a href="#"><span><img src="icons/online.png" style="width: 16px;height: 16px;"></span>  Απομακρυνσμένη Σύνδεση</a>
+                            <li><a href="" id="remote_click"><span><img src="icons/online.png" style="width: 16px;height: 16px;"></span>  Απομακρυνσμένη Σύνδεση</a>
                             </li>
-                            <li><a href="#"><span><img src="icons/usb.png" style="width: 16px;height: 16px;"></span>  Usb Live + Usb Storage</a></li>
+                            <li><a href="" id="usblive_click"><span><img src="icons/usb.png" style="width: 16px;height: 16px;"></span>  Usb Live + Usb Storage</a></li>
                         </ul>
                     </li>
                     <li class="col-md-3">
                         <ul>
                             <li class="dropdown-header">Editors</li>
                             <hr>
-                            <li><a href="#"><span><img src="icons/sublime.png" style="width: 16px;height: 16px;"></span>  Sublime Text</a>
+                            <li><a href="" id="sublime_text_click"><span><img src="icons/sublime.png" style="width: 16px;height: 16px;"></span>  Sublime Text</a>
                             </li>
-                            <li><a href="#"><span><img src="icons/atom.png" style="width: 16px;height: 16px;"></span>  Atom</a>
+                            <li><a href="" id="atom_click"><span><img src="icons/atom.png" style="width: 16px;height: 16px;"></span>  Atom</a>
                             </li>
-                            <li><a href="#"><span><img src="icons/ultra.png" style="width: 16px;height: 16px;"></span>  UltraEdit</a>
+                            <li><a href="" id="ultra_edit_click"><span><img src="icons/ultra.png" style="width: 16px;height: 16px;"></span>  UltraEdit</a>
                             </li>                 
-                            <li><a href="#"><span><img src="icons/gedit.png" style="width: 16px;height: 16px;"></span>  gEdit</a>
+                            <li><a href="" id="gedit_click"><span><img src="icons/gedit.png" style="width: 16px;height: 16px;"></span>  gEdit</a>
                             </li>
-                            <li><a href="#"><span><img src="icons/notepad.png" style="width: 16px;height: 16px;"></span>  Notepad++</a>
+                            <li><a href="" id="notepad_plus_click"><span><img src="icons/notepad.png" style="width: 16px;height: 16px;"></span>  Notepad++</a>
                             </li>         
                         </ul>
                     </li>
@@ -221,15 +221,15 @@
                             <li class="dropdown-header">Περιβάλλον Ανάπτυξης</li>
                             <hr>
                             <li>
-                                <a href="#"><span><img src="icons/devc.png" style="width: 16px;height: 16px;"></span>   Dev C</a>
+                                <a href="" id="dev_c_click"><span><img src="icons/devc.png" style="width: 16px;height: 16px;"></span>   Dev C</a>
                             </li>
                             <li>
-                                <a href="#"><span><img src="icons/visual.png" style="width: 16px;height: 16px;"></span>   Visual Studio</a>
+                                <a href="" id="visual_studio_click"><span><img src="icons/visual.png" style="width: 16px;height: 16px;"></span>   Visual Studio</a>
                             </li>
                             <li>
-                                <a href="#"><span><img src="icons/codeblock.png" style="width: 18px;height: 16px;"></span> Code Blocks</a>
+                                <a href="" id="codeblocks_click"><span><img src="icons/codeblock.png" style="width: 18px;height: 16px;"></span> Code Blocks</a>
                             </li>
-                            <li><a href="#"><span><img src="icons/code.png" style="width: 16px;height: 16px;"></span>  Online Compiler</a>
+                            <li><a href="" id="online_compiler_click"><span><img src="icons/code.png" style="width: 16px;height: 16px;"></span>  Online Compiler</a>
                             </li>
                         </ul>
                     </li>
@@ -720,60 +720,7 @@
 
 
     <!-- Page Navigation System -->
-	<script type="text/javascript">
-        $(document).ready(function(){
-            // Top Navigation Menu:
-            $("#index_click").click(function(e){
-            	e.preventDefault();
-            	// $("#body_id").load('index.html');
-            });
-
-            $("#about_click").click(function(e){
-            	e.preventDefault();
-            	$("#body_id").load('aboutus.html');
-            });
-            
-            $("#contact_click").click(function(e){
-            	e.preventDefault();
-            	$("#body_id").load('contact.html');
-            });
-
-            $("#terms_click").click(function(e){
-            	e.preventDefault();
-            	$("#body_id").load('terms.html');
-            });
-
-            $("#sitemap_click").click(function(e){
-            	e.preventDefault();
-            	$("#body_id").load('sitemap.html');
-            });
-
-			$("#faq_click").click(function(e){
-            	e.preventDefault();
-            	$("#body_id").load('faq.html');
-            });            
-
-			$("#thanks_click").click(function(e){
-            	e.preventDefault();
-            	$("#body_id").load('thanks.html');
-            }); 
-
-
-            //	Navigation Menu Posts:
-            $("#vmware_click").click(function(e){
-            	e.preventDefault();
-            	$("#body_id").load('posts/vmware.html');
-            }); 
-        });
-
-    </script>
-
-    <!-- Script to Activate the Carousel -->
-    <!-- <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script> -->
+	<script src="js/menuhandler.js"></script>
 
     <!-- change hover item to active -->
     <script src="js/activeChanger.js"></script>
