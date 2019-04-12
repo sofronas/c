@@ -5,7 +5,7 @@ var scrolltotop = {
             scrollduration: 1e3,
             fadeduration: [500, 100]
         },
-        controlHTML: '<img src="images/gotoparrow.svg" width="60" height="60"/>',
+        controlHTML: '<img src="icons/gotoparrow.svg" width="80" height="80"/>',
         controlattrs: {
             offsetx: 5,
             offsety: 5

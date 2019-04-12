@@ -31,4 +31,5 @@ function time_clock(x){
 	setTimeout('time_clock("'+ x +'");','1000');
 
 	return true;
+
 }

@@ -1,0 +1,226 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-image: url('../images/background.jpg');
+	margin: 0px;
+    padding-top: 0px;
+}
+
+.container{
+	/*border: 1px solid red;*/
+}
+
+.srow{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.sfHeader{
+	background-color: white;
+	margin: 0 auto; 
+	width: 100%;
+}
+
+.uopLogo, .cLogo{
+	width: 80px;
+	height: 80px;
+}
+
+.blog_title{
+	padding-top: 8.5px;
+	color: rgba(52, 152, 219, 1);
+	text-align: center;
+	font-size: 30px;
+}
+
+.blog_subtitle{
+	color: black;
+	text-align: center;
+	font-size: 15px;
+}
+
+
+.headerLogo{
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+	height: auto;
+}
+
+.safternav, .sbeforefoot ,.sbeforenav {
+    border-bottom: 4px solid #007abe;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.49);
+    filter: drop-shadow(0 0 30px #333);
+}
+
+.sdownav {
+	background-color: #3d85c6;
+	padding-bottom: 0;
+	height: 5px;
+	font-size: 12px;
+	position: relative;
+	overflow: hidden;
+	filter: drop-shadow(0 -2mm 4mm #333);
+}
+
+.sofron_top_nav{
+	background-color: #3D85C6 !important;
+	height: 25px;
+}
+
+.sofron_main_nav{
+	background-color: black !important;
+}
+
+.spanclock {
+	color: #e2e2e2;
+	display: block;
+	padding-top: 7.5px;
+	
+}
+
+.sofron_top_nav_ul{
+	font-size: 15px;
+}
+
+.sofron_top_nav_ul a {
+	color: #e2e2e2 !important;
+}
+
+.sofron_top_nav_ul a:hover{
+	background-color: black !important;
+	color: #e2e2e2 !important;
+	height: 82.5%;
+}
+
+/* Top nav icons */
+.t{
+	margin-top: -2.5px;
+	margin-right: 0.5px;
+}
+
+.noshow{
+	display: none;
+}
+
+
+#post_area{
+	background-color: white;
+}
+
+.sofron_p{
+	color: white !important;
+}
+
+.sofron_quotes{
+	background-color: #007ABE;
+	padding: 10px 20px;
+	margin: 0 0 20px;
+	font-size: 17.5px;
+	border-left: 5px solid #eee;
+}
+
+#display-4{
+	color: white;
+}
+
+.text_c{
+	text-align: center;
+}
+
+.sofron_footer_quotes{
+	background-color: #2E2E2E;
+	padding: 10px 20px;
+	margin: 0 0 20px;
+	border-left: 5px solid #eee;
+}
+
+.sofron_hr{
+	margin-top: -1px;
+	background-color: white;
+}
+
+#home{
+	background-color: #007ABE;
+	width: 10%;
+	height: 100%;
+}
+
+/* Media Queries*/
+
+/* Smartphones */
+@media only screen and (max-width: 600px) {
+	.sofron_top_nav{
+		height: auto;
+	}
+	.noshow{
+		display: block;
+	}
+	.sofron_top_nav_ul a:hover{
+		height: auto;
+		width: auto;
+	}
+	#uopLogo,#cLogo{
+		display: block;
+    	margin: 0 auto;
+	}
+	#cLogo1{
+		display: none;
+	}
+
+	.flex-container > div{
+		width: 100% !important;
+	}
+	.showcase{
+		background: url('../images/welcome.jpg');
+		margin-left: 0px  !important;
+		margin-right: -6.5px !important;
+	}
+	#display-4{
+		/*background-color: #3399FF;*/
+		color: black;
+		font-size: 55px;
+	}
+	.sofron_p{
+		color: black !important;
+	}
+}
+
+/* Tablets */
+@media only screen and (max-width: 992px) {
+	.sofron_top_nav{
+		height: auto;
+	}
+	.noshow{
+		display: block;
+	}
+	.sofron_top_nav_ul a:hover{
+		height: auto;
+		width: auto;
+	}
+	#uopLogo,#cLogo{
+		display: block;
+    	margin: 0 auto;
+	}
+	#cLogo1{
+		display: none;
+	}
+}
+
+/* Laptop/Desktop */
+@media only screen and (min-width: 992px) {
+	/*#headerLogo{
+		display: none;	
+	}*/
+	#cLogo{
+		display: none;
+	}
+	#cLogo1{
+		display: block;
+	}
+	.flex-container {
+		justify-content: center;
+	}
+}
