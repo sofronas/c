@@ -110,6 +110,10 @@
     color: red;
     text-decoration:none; 
 }
+#linkedin_id:hover{
+    color: #0094BA;
+    text-decoration: none;
+}
 
 .footer-bs .footer-ns h4 {
     font-size: 20px;
