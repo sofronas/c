@@ -1,6 +1,17 @@
+@import url("media.css");
+
 *{
-	box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
 }
+
+:after,:before{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
 body{
 	background-image: url('../images/background1.jpg');
 	/*background-color: black;*/
@@ -70,7 +81,11 @@ body{
 
 .sofron_top_nav{
 	background-color: #3D85C6 !important;
-	height: 25px;
+	font-size: 12px !important;
+}
+
+.sofron_top_nav ul li a{
+	color: white !important;
 }
 
 .sofron_main_nav{
@@ -79,10 +94,6 @@ body{
 
 .sofron_main_nav > li {
 	float: left;
-}
-
-.sofron_main_nav > li > a{
-
 }
 
 .sofron_main_nav li a:hover{
@@ -98,7 +109,7 @@ body{
 }
 
 .sofron_top_nav_ul{
-	font-size: 15px;
+	font-size: 13.5px;
 }
 
 .sofron_top_nav_ul a {
@@ -108,7 +119,6 @@ body{
 .sofron_top_nav_ul a:hover{
 	background-color: black !important;
 	color: #e2e2e2 !important;
-	height: 82.5%;
 }
 
 /* Top nav icons */
@@ -165,15 +175,7 @@ body{
 }
 
 
-.navbar-dark .navbar-nav .nav-link{
-	color: #FFFFFF;
-	text-decoration: none;
-}
 
-.navbar-dark .navbar-nav .nav-link:hover{
-	color: #FFFFFF;
-	background-color: #007ABE;
-}
 
 .megamenu-li {
 	position: static;
@@ -187,80 +189,94 @@ body{
 	padding: 15px;
 }
 
-
-/* Media Queries*/
-
-/* Smartphones */
-@media only screen and (max-width: 600px) {
-	.sofron_top_nav{
-		height: auto;
-	}
-	.noshow{
-		display: block;
-	}
-	.sofron_top_nav_ul a:hover{
-		height: auto;
-		width: auto;
-	}
-	#uopLogo,#cLogo{
-		display: block;
-    	margin: 0 auto;
-	}
-	#cLogo1{
-		display: none;
-	}
-
-	.flex-container > div{
-		width: 100% !important;
-	}
-	.showcase{
-		background: url('../images/welcome.jpg');
-		margin-left: 0px  !important;
-		margin-right: -6.5px !important;
-	}
-	#display-4{
-		/*background-color: #3399FF;*/
-		color: black;
-		font-size: 55px;
-	}
-	.sofron_p{
-		color: black !important;
-	}
+.sofron_static{
+	position: static !important;
 }
 
-/* Tablets */
-@media only screen and (max-width: 992px) {
-	.sofron_top_nav{
-		height: auto;
-	}
-	.noshow{
-		display: block;
-	}
-	.sofron_top_nav_ul a:hover{
-		height: auto;
-		width: auto;
-	}
-	#uopLogo,#cLogo{
-		display: block;
-    	margin: 0 auto;
-	}
-	#cLogo1{
-		display: none;
-	}
+.noList{
+	list-style: none;
+	margin-left: 0px !important;
+	/*border: 1px solid red;*/
 }
 
-/* Laptop/Desktop */
-@media only screen and (min-width: 992px) {
-	/*#headerLogo{
-		display: none;	
-	}*/
-	#cLogo{
-		display: none;
-	}
-	#cLogo1{
-		display: block;
-	}
-	.flex-container {
-		justify-content: center;
-	}
+.noList:last-child{
+	padding-bottom: 20px;
+}
+
+.white_hr{
+	display: block; 
+	height: 1px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+    /*margin: 1em 0; */
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.dropdown-header{
+	font-size: 18px !important;
+	color: #3498DB !important;
+	margin-left: -19px !important;
+	font-weight: bold !important;
+}
+
+.items_li{
+	color: white;
+	padding-top: 5px;
+	height: 100%;
+}
+
+.items_li a{
+	color: white;
+}
+
+.items_li:hover, .items_li a:hover{
+	color: white;
+	background-color: #007ABE;
+	width: 100%;
+	cursor: pointer;
+}
+
+.sofron_width{
+	width: 100% !important;
+	margin-top: 3px !important;
+}
+
+.sofrn_hover{
+	list-style: none;
+}
+
+.sofron_hover:hover{
+	color: white;
+	background-color: #007abe;
+	text-decoration: none;
+}
+
+
+.flex-container1 {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+
+.sofron_list_unstyled{
+	list-style-image: url('../images/ebook.png');
+}
+
+
+#dropdownUL a{
+	color: white;
+}
+
+
+
+.sofron_post div{ 
+	display: none; 
+}
+
+.sofron_post:hover>div{
+	display: block; 
 }

@@ -1,0 +1,33 @@
+img.sofron{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.zoom {
+	transition: transform .2s;
+	width: 200px;
+	height: 200px;
+}
+
+.zoom:hover {
+	transform: scale(1.5);
+}
+
+.FAA {
+    display:none;
+}
+
+.FAQ_Pointer {
+	cursor: pointer;
+}
+
+
+.sofron_box_contact{
+	-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.5);
+	text-align: center;
+	padding-top: 18px;
+}
+
